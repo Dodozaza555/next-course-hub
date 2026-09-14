@@ -277,3 +277,24 @@ a {
   border: 2px solid var(--color-leather);
   flex-shrink: 0;
 }
+.band-actions {
+  display: flex;
+  gap: 0.6rem;
+  margin: 0.75rem 0;
+}
+
+.band-actions button {
+  border: 1.5px solid var(--color-leather);
+  background: var(--color-panel);
+  color: var(--color-ink);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+.band-actions button[aria-pressed="true"] {
+  background: var(--color-wine);
+  color: #fdf6e9;
+  border-color: var(--color-wine);
+}
