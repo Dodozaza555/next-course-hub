@@ -1,7 +1,18 @@
+export type CourseStatus = "not_started" | "in_progress" | "completed";
+
 export type Course = {
-  id: number;
+  id: string;
   code: string;
-  title: string;
-  credits: number;
-  isOpen: boolean;
+  name: string;
+  credit: number;
+  instructor: string;
+  status: CourseStatus;
+};
+
+export type CourseDraft = {
+  code: string;
+  name: string;
+  credit: string;
+  instructor: string;
+  status: CourseStatus;
 };

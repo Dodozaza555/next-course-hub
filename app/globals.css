@@ -197,6 +197,121 @@ a {
   font-weight: 500;
 }
 
+/* ===== Course page layout ===== */
+.course-page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.course-toolbar {
+  margin-bottom: 1.25rem;
+}
+
+.course-search {
+  width: 100%;
+  border: 1.5px solid var(--color-leather);
+  border-radius: 0.75rem;
+  background: var(--color-panel);
+  color: var(--color-ink);
+  padding: 0.8rem 1rem;
+  font: inherit;
+  box-shadow: 0 4px 12px rgba(74, 47, 31, 0.06);
+}
+
+.course-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.status-filter {
+  border: 1.5px solid var(--color-leather);
+  border-radius: 0.75rem;
+  background: var(--color-panel);
+  color: var(--color-ink);
+  padding: 0.8rem 1rem;
+  font: inherit;
+}
+
+.summary-box {
+  background: #fff9ef;
+  border: 1px solid var(--color-gold);
+  border-radius: 0.75rem;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  color: var(--color-ink-soft);
+}
+
+.course-form {
+  background: var(--color-panel);
+  border: 1px solid var(--color-leather);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 20px rgba(74, 47, 31, 0.06);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  font-weight: 600;
+  color: var(--color-ink-soft);
+}
+
+.field-group input,
+.field-group select {
+  border: 1.5px solid #d7c4aa;
+  border-radius: 0.65rem;
+  padding: 0.7rem 0.8rem;
+  font: inherit;
+  background: #fff;
+  color: var(--color-ink);
+}
+
+.form-actions,
+.confirm-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 1.1rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--color-wine);
+  color: #fff7ef;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-ink);
+  border: 1.5px solid var(--color-leather);
+}
+
+.empty-state {
+  margin-top: 1rem;
+  color: var(--color-ink-soft);
+  font-style: italic;
+}
+
 /* ===== Card (ใช้ร่วมกัน course-card / band-card) ===== */
 .course-grid,
 .band-grid {
@@ -224,6 +339,46 @@ a {
 .band-card p {
   margin: 0.3rem 0;
   color: var(--color-ink-soft);
+}
+
+.course-card > div {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.course-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.course-card button {
+  border: 1.5px solid var(--color-leather);
+  background: #fff;
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.confirm-dialog {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: #fffaf0;
+  border: 1px solid var(--color-leather);
+  border-radius: 1rem;
+  box-shadow: 0 12px 28px rgba(74, 47, 31, 0.18);
+  padding: 1rem 1.25rem;
+  max-width: 22rem;
+  z-index: 50;
+}
+
+.confirm-dialog p {
+  margin: 0;
+  color: var(--color-ink);
 }
 
 .band-header {
